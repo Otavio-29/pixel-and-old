@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/contato-style.css">
+    <title>Pixel & Old - Contato</title>
+</head>
+<body>  
+
+    <!-- Cabeçalho com o Menu de Navegação -->
+    <header class="cabecalho">
+        <nav class="menu">
+            <div class="logo">Pixel & Old</div>
+            <ul class="ul-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produto.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Título da Página -->
+        <section id="titulo-pagina">
+            <h1>Fale Conosco</h1>
+            <p>Tem alguma dúvida, sugestão ou feedback? Entre em contato conosco!</p>
+        </section>
+
+        <!-- Seção de Conteúdo de Contato, com Formulário e Informações -->
+        <section id="secao-contato">
+            
+            <!-- Formulário de Contato -->
+            <div class="caixa-formulario">
+                <h2>Envie sua mensagem</h2>
+                <!-- Coloquei # no atributo action, pois o formulário é estático -->
+                <form action="#" method="POST">
+                    <div class="grupo-formulario">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="botao-enviar">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <!-- Informações de Contato da Loja -->
+            <div class="caixa-informacoes">
+                <h2>Informações da Loja</h2>
+                <p>Prefere outro canal de atendimento? Você também pode nos encontrar através dos meios abaixo:</p>
+                
+                <ul class="lista-contato">
+                    <li><strong>E-mail:</strong> suporte@pixelold.com</li>
+                    <li><strong>Telefone:</strong> (21) 99999-9999</li>
+                    <li><strong>Endereço:</strong> Niterói, RJ - Brasil</li>
+                    <li><strong>Horário:</strong> Seg à Sex, das 09h às 18h</li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2026 Pixel & Old. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Otávio Augusto</p>
+    </footer>
+    
+</body>
+</html>
