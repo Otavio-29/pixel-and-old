@@ -1,0 +1,184 @@
+/* Padrão base */
+*{
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de cores base para o projeto */
+:root{
+    --background-clean: #fdfbf7;
+    --cor-principal: #4a90e2;
+    --cor-texto: #333333;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--background-clean);
+    color: var(--cor-texto);
+}
+
+/* Estilização do Header e Menu */
+.cabecalho{
+    width: 100%;
+    background-color: var(--cor-principal);
+    padding: 1rem 2rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.ul-menu{
+    display: flex;
+    gap: 2rem;
+}
+
+.ul-menu li{
+    list-style: none;
+}
+
+.ul-menu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.ul-menu a:hover{
+    opacity: 0.8;
+}
+
+/* Estilização do Título da Página */
+section#titulo-pagina{
+    padding: 3rem 2rem 1rem 2rem;
+    text-align: center;
+}
+
+section#titulo-pagina h1{
+    font-size: 2.2rem;
+    color: var(--cor-principal);
+    margin-bottom: 0.5rem;
+}
+
+section#titulo-pagina p{
+    color: #666666;
+    font-size: 1.1rem;
+}
+
+/* Estilização da seção de Detalhes dos Produtos */
+section#detalhes-produtos{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bloco-produto{
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.produto-imagens{
+    flex: 1;
+}
+
+.produto-imagens img{
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.produto-info{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.produto-info h2{
+    font-size: 1.5rem;
+    color: var(--cor-principal);
+}
+
+.descricao-completa{
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.5;
+}
+
+.lista-detalhes{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+.preco-produto{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #27ae60;
+    margin-top: 0.5rem;
+}
+
+.botao-comprar{
+    text-decoration: none;
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    transition: background-color 0.2s;
+}
+
+.botao-comprar:hover{
+    background-color: #357abd;
+}
+
+/* Estilização do Footer */
+.footer{
+    background-color: #eef2f7;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    color: #666666;
+}
+
+/* Media Query para Dispositivos Móveis */
+@media screen and (max-width: 768px){
+    .menu{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .bloco-produto{
+        flex-direction: column;
+    }
+
+    .botao-comprar{
+        width: 100%;
+        text-align: center;
+    }
+}
